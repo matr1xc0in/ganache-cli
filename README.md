@@ -3,8 +3,6 @@
 [![Build Status](https://travis-ci.org/trufflesuite/ganache-cli.svg?branch=master)](https://travis-ci.org/trufflesuite/ganache-cli)
 *NOTICE*: `testrpc` is now `ganache-cli`. Use it just as you would `testrpc`.
 
-> *NOTICE*: `testrpc` is now `ganache-cli`. Use it just as you would `testrpc`.
-
 <p align="center">
   <img src="https://github.com/ethereumjs/testrpc/blob/ganache-cli/resources/icons/ganache-cli-128x128.png?raw=true">
 </p>
