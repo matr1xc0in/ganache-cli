@@ -23,6 +23,6 @@ COPY --from=builder "/app/build/ganache-core.docker.cli.js.map" "./ganache-core.
 
 ENV DOCKER true
 
-EXPOSE 8545
+EXPOSE 7545
 
-ENTRYPOINT ["node", "/app/ganache-core.docker.cli.js"]
+ENTRYPOINT ["node", "/app/ganache-core.docker.cli.js", "-p 7545"]
