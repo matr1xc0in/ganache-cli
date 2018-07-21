@@ -8,6 +8,7 @@ RUN npm install
 ADD . .
 RUN npm run build
 
-EXPOSE 8545
+EXPOSE 7545
 
-ENTRYPOINT ["node", "./build/cli.node.js"]
+# -h 0.0.0.0 added after ganachi 6.0.0 to listen on all interface
+ENTRYPOINT ["node", "./build/cli.node.js", "-h 0.0.0.0", "-p 7545"]
