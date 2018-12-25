@@ -5,4 +5,4 @@ docker run -it \
   --rm \
   --hostname ganache \
   -p 127.0.0.1:7545:7545 \
-  ganache-cli:latest
+  blcksync/ganache-cli:latest

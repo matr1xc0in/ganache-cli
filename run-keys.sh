@@ -7,7 +7,7 @@ docker run -it \
   -p 127.0.0.1:7545:7545 \
   --entrypoint "node" \
   blcksync/ganache-cli:latest \
-  ./build/cli.node.js -h 0.0.0.0 -p 7545 \
+  /app/ganache-core.docker.cli.js -p 7545 \
   -u 0 -u 1 -u 2 -u 3 -u 4 -u 5 -u 6 -u 7 -u 8 -u 9 \
   --account="0x7250572bc25797da82fb70407fe89620c619ad20555a16b558a898b7fc539833,100000000000000000000" \
   --account="0x10b1dd22f5836436b97bb7d54be676697913dc60125a6287f8fea023b57f9d83,100000000000000000000" \
