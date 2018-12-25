@@ -6,7 +6,7 @@ docker run -it \
   --hostname ganache \
   -p 127.0.0.1:7545:7545 \
   --entrypoint "node" \
-  ganache-cli:latest \
+  blcksync/ganache-cli:latest \
   ./build/cli.node.js -h 0.0.0.0 -p 7545 \
   -u 0 -u 1 -u 2 -u 3 -u 4 -u 5 -u 6 -u 7 -u 8 -u 9 \
   --account="0x7250572bc25797da82fb70407fe89620c619ad20555a16b558a898b7fc539833,100000000000000000000" \
