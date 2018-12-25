@@ -23,9 +23,11 @@ COPY --from=builder "/app/node_modules/ganache-core/node_modules/websocket/build
 COPY --from=builder "/app/build/ganache-core.docker.cli.js" "./ganache-core.docker.cli.js"
 COPY --from=builder "/app/build/ganache-core.docker.cli.js.map" "./ganache-core.docker.cli.js.map"
 
+# This triggers nic to listen on 0.0.0.0
 ENV DOCKER true
 
 EXPOSE 7545
 
 # -h 0.0.0.0 added after ganachi 6.0.0 to listen on all interface
-ENTRYPOINT ["node", "/app/ganache-core.docker.cli.js", "-h 0.0.0.0", "-p 7545"]
+# -h not required if building inside docker
+ENTRYPOINT ["node", "/app/ganache-core.docker.cli.js", "-p 7545"]
