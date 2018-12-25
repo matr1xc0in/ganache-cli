@@ -1,6 +1,6 @@
 #!/bin/bash
 
 docker build \
-  -t ganache-cli \
+  -t blcksync/ganache-cli \
   -f Dockerfile.private \
   .
